@@ -7,7 +7,11 @@ app = Flask(__name__)
 @app.route('/')
 def index():
     html_page = requests.get("https://thefoxxstuff.bandcamp.com/album/one-soul").content
+<<<<<<< HEAD
 # asdasdasdssss
+=======
+# asdasd
+>>>>>>> 566e623b2728b8a3b5b987a1cbd07c6239d1eaaf
     soup = BeautifulSoup(html_page, 'html.parser')
 
     href_profile = [a.get('href') for a in soup.find_all('a', class_='pic')]
