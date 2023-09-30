@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    html_page = requests.get("https://halleylabs.com/album/d-freq-crush").content
+    html_page = requests.get("https://thefoxxstuff.bandcamp.com/album/one-soul").content
 
     soup = BeautifulSoup(html_page, 'html.parser')
 
